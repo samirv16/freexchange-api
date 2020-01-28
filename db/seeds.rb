@@ -7,5 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Post.create([
-    {item1: 'mario hat', item2: 'invisible cloak', }
+    {item1: 'mario hat', item2: 'invisible cloak'},
+    {item1: 'aladin outfit', item2: 'harry potter outfit'},
+    {item1: 'orange shirt with a pocket', item2: 'soccer shirt'},
+    {item1: 'extravagant sunglasses', item2: 'baseball hat'},
+    {item1: 'cat ears', item2: 'witch hat'},
+    {item1: 'bunny tail', item2: 'shirt with lion face'},
 ])
