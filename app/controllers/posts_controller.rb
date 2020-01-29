@@ -12,7 +12,6 @@ class PostsController < ApplicationController
     end
 
     def create
-        binding.pry
         @post = Post.create(post_params)
 
         render json: @post, status: 200
@@ -34,6 +33,6 @@ class PostsController < ApplicationController
     private
 
     def post_params
-        params.require(:post).permit(:name)
+        params.require(:post).permit(:item1, :item2)
     end
 end
