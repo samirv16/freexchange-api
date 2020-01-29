@@ -14,3 +14,7 @@ Post.create([
     {item1: 'cat ears', item2: 'witch hat'},
     {item1: 'bunny tail', item2: 'shirt with lion face'},
 ])
+
+Comment.create([
+    {body: "i'm interested in this, can we meet at starbucks?", post_id: 1}
+])

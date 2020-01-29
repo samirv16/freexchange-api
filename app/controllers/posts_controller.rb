@@ -1,26 +1,26 @@
 class PostsController < ApplicationController
     def index
         @posts = Post.all 
-
-        render json: @posts, status: 200
+        
+        render json:  @posts, include:[:comments], status: 200
     end
 
     def show
         @post = Post.find(params[:id])
 
-        render json: @post, status: 200
+        render json: @post,include:[:comments],status: 200
     end
 
     def create
         @post = Post.create(post_params)
 
-        render json: @post, status: 200
+        render json: @post,include:[:comments], status: 200
     end
 
     def update
         @post = Post.find(params[:id])
         @post = Post.update(post_params)
-        render json: @post, status: 200
+        render json: @post,include:[:comments], status: 200
     end
 
     def destroy

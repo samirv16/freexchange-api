@@ -9,11 +9,9 @@ class CommentsController < ApplicationController
     end 
 
     def create
-        
-        comment = Comment.new(comment_params)
-        comment.save
+        comment = Comment.create(comment_params)
+    
         render json: comment, status: 404
-        
     end 
 
     def update
